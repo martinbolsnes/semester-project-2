@@ -1,0 +1,20 @@
+{
+  "kind": "singleType",
+  "collectionName": "hero_banners",
+  "info": {
+    "name": "Home",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image_url": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

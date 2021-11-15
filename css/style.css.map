@@ -1,0 +1,15 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../scss/style.scss",
+        "../scss/partials/_variables.scss",
+        "../scss/partials/_layout.scss",
+        "../scss/partials/_home.scss",
+        "../scss/partials/_products.scss",
+        "../scss/partials/_details.scss",
+        "../scss/partials/_cart.scss"
+    ],
+    "names": [],
+    "file": "style.css"
+}
