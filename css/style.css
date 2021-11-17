@@ -79,5 +79,80 @@ i {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  height: 550px;
+  -webkit-filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
+          filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.heroHeading {
+  color: #000000;
+  font-weight: 300;
+  font-size: 2.7rem;
+  text-align: center;
+  text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.hero__text--container {
+  height: 150px;
+  margin: auto !important;
+}
+
+.hero__text {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 400;
+  font-size: 1.7rem;
+  text-align: center;
+}
+
+.featuredSection {
+  background-color: #ccc3b6;
+}
+
+.card {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+.card-img-top {
+  height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  border: 2px solid #737164;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
+          filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
+  border-radius: 4px;
+}
+
+.card-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 1rem 0rem !important;
+}
+
+.card-text {
+  font-size: 1.3rem;
+}
+
+.card-text-title {
+  font-weight: 600;
+  margin-bottom: 0;
 }
 /*# sourceMappingURL=style.css.map */
