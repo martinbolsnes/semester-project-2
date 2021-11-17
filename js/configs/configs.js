@@ -1,4 +1,4 @@
-export const BASE_URL = `http://localhost:1337`;
+export const BASE_URL = `https://semester-project2-api.herokuapp.com`;
 
 export const headers = {
   headers: {
