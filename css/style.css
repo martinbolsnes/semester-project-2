@@ -274,6 +274,9 @@ i {
   .heroHeading {
     font-size: 1.5rem;
   }
+  .hero__text--container {
+    width: 80% !important;
+  }
   .hero__text {
     font-size: 1rem;
   }
