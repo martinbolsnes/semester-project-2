@@ -6,6 +6,7 @@
 
 body {
   background-color: #f6f5f4 !important;
+  overflow-x: hidden;
 }
 
 h1,
@@ -36,6 +37,7 @@ i {
 .menu {
   -webkit-box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.04);
           box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.04);
+  width: 100%;
 }
 
 .navbar {
@@ -47,7 +49,7 @@ i {
 .navbar-brand {
   font-family: "MuseoModerno", cursive;
   font-weight: 300;
-  color: #000000;
+  color: #000000 !important;
   font-size: 2.2rem !important;
 }
 
@@ -75,6 +77,16 @@ i {
   }
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    margin-left: 5px !important;
+    margin-right: 5px !important;
+  }
+  .navbar-brand {
+    text-align: center;
+  }
+}
+
 .hero__container {
   background-position: center;
   background-repeat: no-repeat;
@@ -91,6 +103,7 @@ i {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  width: 100%;
 }
 
 .heroHeading {
@@ -115,6 +128,11 @@ i {
 
 .featuredSection {
   background-color: #ccc3b6;
+  padding-top: 40px;
+}
+
+.featuredHeading {
+  font-weight: 300 !important;
 }
 
 .card {
@@ -127,11 +145,36 @@ i {
   -o-object-fit: cover;
      object-fit: cover;
   border: 2px solid #737164;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  -webkit-filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
-          filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
+  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  opacity: 1;
+  -webkit-transition: 0.5 ease;
+  transition: 0.5 ease;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+.card:hover .card-img-top {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.card:hover .hoverText_container {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hoverText_container {
+  -webkit-transition: 0.5 ease;
+  transition: 0.5 ease;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  opacity: 0;
 }
 
 .card-body {
@@ -154,5 +197,38 @@ i {
 .card-text-title {
   font-weight: 600;
   margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .heroHeading {
+    font-size: 2rem;
+  }
+  .hero__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__container {
+    height: 400px;
+  }
+  .card-img-top {
+    height: 150px;
+  }
+  .heroHeading {
+    font-size: 1.5rem;
+  }
+  .hero__text {
+    font-size: 0.8rem;
+  }
+  .card-text {
+    font-size: 1rem;
+  }
 }
 /*# sourceMappingURL=style.css.map */

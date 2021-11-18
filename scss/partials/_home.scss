@@ -7,6 +7,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  width: 100%;
 }
 
 .heroHeading {
@@ -32,6 +33,11 @@
 
 .featuredSection {
   background-color: $gather;
+  padding-top: 40px;
+}
+
+.featuredHeading {
+  font-weight: $light !important;
 }
 
 .card {
@@ -43,9 +49,31 @@
   height: 300px;
   object-fit: cover;
   border: 2px solid #737164;
-  box-sizing: border-box;
-  filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
+  opacity: 1;
+  transition: 0.5 ease;
+  backface-visibility: hidden;
+}
+
+.card:hover .card-img-top {
+  opacity: 0.4;
+  cursor: pointer;
+}
+
+.card:hover .hoverText_container {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.hoverText_container {
+  transition: 0.5 ease;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  opacity: 0;
 }
 
 .card-body {
@@ -62,4 +90,41 @@
 .card-text-title {
   font-weight: $semi-bold;
   margin-bottom: 0;
+}
+
+@media (max-width: 1024px) {
+  .heroHeading {
+    font-size: 2rem;
+  }
+
+  .hero__text {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card-img-top {
+    height: 250px;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero__container {
+    height: 400px;
+  }
+  .card-img-top {
+    height: 150px;
+  }
+
+  .heroHeading {
+    font-size: 1.5rem;
+  }
+
+  .hero__text {
+    font-size: 0.8rem;
+  }
+
+  .card-text {
+    font-size: 1rem;
+  }
 }
