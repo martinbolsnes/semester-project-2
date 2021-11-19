@@ -1,9 +1,9 @@
-export function renderProducts(productsToRender) {
-  const featuredCards = document.querySelector(".featured--cards");
-  featuredCards.innerHTML = "";
+export function renderCards(productsToRender) {
+  const productsCards = document.querySelector(".products--cards");
+  productsCards.innerHTML = "";
 
   productsToRender.forEach(function (element) {
-    featuredCards.innerHTML += `<div class="col">
+    productsCards.innerHTML += `<div class="col-lg-4 col-md-6 col-6">
         <div class="card h-100">
         <img src="${element.image_url}" class="card-img-top" alt="${element.title}">
         <div class="hoverText_container">

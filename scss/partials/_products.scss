@@ -1,0 +1,27 @@
+.shopHeading {
+  font-weight: $light;
+  margin-top: 40px;
+}
+
+.filter__container {
+  width: 30% !important;
+}
+
+.searchInput {
+  background: #f6f5f4;
+
+  border: 2px solid #e6e7dc;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 12px rgba(204, 195, 182, 0.25),
+    inset 0px 4px 12px rgba(204, 195, 182, 0.3);
+  border-radius: 2px;
+}
+
+.searchInput:focus {
+  outline: solid 1px $olive !important;
+  box-shadow: 0px 4px 12px $olive !important;
+}
+
+.productsSection {
+  margin-top: 40px;
+}

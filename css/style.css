@@ -121,6 +121,10 @@ i {
   margin-bottom: 20px;
 }
 
+.SoMe {
+  margin: 5px;
+}
+
 .hero__container {
   background-position: center;
   background-repeat: no-repeat;
@@ -344,5 +348,34 @@ i {
   .about__img1 {
     height: 150px;
   }
+}
+
+.shopHeading {
+  font-weight: 300;
+  margin-top: 40px;
+}
+
+.filter__container {
+  width: 30% !important;
+}
+
+.searchInput {
+  background: #f6f5f4;
+  border: 2px solid #e6e7dc;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: 0px 4px 12px rgba(204, 195, 182, 0.25), inset 0px 4px 12px rgba(204, 195, 182, 0.3);
+          box-shadow: 0px 4px 12px rgba(204, 195, 182, 0.25), inset 0px 4px 12px rgba(204, 195, 182, 0.3);
+  border-radius: 2px;
+}
+
+.searchInput:focus {
+  outline: solid 1px #737164 !important;
+  -webkit-box-shadow: 0px 4px 12px #737164 !important;
+          box-shadow: 0px 4px 12px #737164 !important;
+}
+
+.productsSection {
+  margin-top: 40px;
 }
 /*# sourceMappingURL=style.css.map */
