@@ -29,6 +29,11 @@ a {
   text-decoration: none !important;
 }
 
+a:checked {
+  text-decoration: none;
+  color: $black;
+}
+
 i {
   color: black;
 }

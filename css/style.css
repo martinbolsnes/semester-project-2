@@ -30,6 +30,11 @@ a {
   text-decoration: none !important;
 }
 
+a:checked {
+  text-decoration: none;
+  color: #000000;
+}
+
 i {
   color: black;
 }
@@ -129,6 +134,7 @@ i {
 .featuredSection {
   background-color: #ccc3b6;
   padding-top: 40px;
+  padding-bottom: 50px;
 }
 
 .featuredHeading {
@@ -256,6 +262,9 @@ i {
   .hero__text {
     font-size: 1.2rem;
   }
+  .about__text--paragraph {
+    width: 70%;
+  }
 }
 
 @media (max-width: 768px) {
@@ -282,6 +291,24 @@ i {
   }
   .card-text {
     font-size: 1rem;
+  }
+  .hoverText_container {
+    top: 40%;
+  }
+  .hoverText {
+    font-size: 1.1rem;
+  }
+  .aboutSection {
+    margin-top: 40px;
+  }
+  .about__text--paragraph {
+    width: 90%;
+  }
+  .about__img4,
+  .about__img3,
+  .about__img2,
+  .about__img1 {
+    height: 150px;
   }
 }
 /*# sourceMappingURL=style.css.map */
