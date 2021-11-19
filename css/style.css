@@ -326,6 +326,9 @@ i {
   .hero__text {
     font-size: 1rem;
   }
+  .card-img-top {
+    border: 1px solid #737164;
+  }
   .card-text {
     font-size: 1rem;
   }
