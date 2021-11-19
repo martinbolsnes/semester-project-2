@@ -1,4 +1,5 @@
 import { BASE_URL } from "./configs/configs.js";
+import alert from "./components/alert.js";
 
 const featuredCards = document.querySelector(".featured--cards");
 
@@ -23,7 +24,9 @@ async function getFeaturedCards() {
       </div>`;
       }
     }
-  } catch {}
+  } catch {
+    alert("alert-danger", "Connection error");
+  }
 }
 
 getFeaturedCards();

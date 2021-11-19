@@ -1,6 +1,7 @@
 import { renderCards } from "./components/renderCards.js";
 import { searchProducts } from "./filter.js";
 import { BASE_URL } from "./configs/configs.js";
+import alert from "./components/alert.js";
 
 async function getProductCards() {
   try {
@@ -10,7 +11,9 @@ async function getProductCards() {
 
     renderCards(apiResults);
     searchProducts(apiResults);
-  } catch {}
+  } catch {
+    alert("alert-danger", "Connection error");
+  }
 }
 
 getProductCards();
