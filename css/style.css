@@ -356,7 +356,17 @@ i {
 }
 
 .filter__container {
-  width: 30% !important;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal !important;
+  -webkit-box-direction: normal !important;
+      -ms-flex-direction: row !important;
+          flex-direction: row !important;
+  -webkit-box-align: start !important;
+      -ms-flex-align: start !important;
+          align-items: flex-start !important;
+  margin-top: 40px;
 }
 
 .searchInput {
@@ -376,6 +386,6 @@ i {
 }
 
 .productsSection {
-  margin-top: 40px;
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

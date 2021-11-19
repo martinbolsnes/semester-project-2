@@ -4,7 +4,10 @@
 }
 
 .filter__container {
-  width: 30% !important;
+  display: flex !important;
+  flex-direction: row !important;
+  align-items: flex-start !important;
+  margin-top: 40px;
 }
 
 .searchInput {
@@ -23,5 +26,5 @@
 }
 
 .productsSection {
-  margin-top: 40px;
+  margin-top: 20px;
 }
