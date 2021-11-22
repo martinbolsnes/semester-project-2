@@ -65,6 +65,12 @@ i {
   font-weight: 300;
   color: #000000 !important;
   font-size: 2.2rem !important;
+  background: #a73737;
+  background: -webkit-gradient(linear, left bottom, left top, from(#a73737), to(#7a2828));
+  background: linear-gradient(0deg, #a73737 0%, #7a2828 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-toggler:focus {
@@ -76,6 +82,12 @@ i {
 
 .loginBtn {
   font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.loginBtn:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .feather-home,

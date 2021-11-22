@@ -18,6 +18,15 @@
   font-weight: $light;
   color: $black !important;
   font-size: 2.2rem !important;
+  background: rgb(167, 55, 55);
+  background: linear-gradient(
+    0deg,
+    rgba(167, 55, 55, 1) 0%,
+    rgba(122, 40, 40, 1) 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .navbar-toggler:focus {
@@ -28,6 +37,12 @@
 
 .loginBtn {
   font-size: 1.2rem;
+  opacity: 0.6;
+}
+
+.loginBtn:hover {
+  opacity: 1;
+  cursor: pointer;
 }
 
 .feather-home,
