@@ -9,6 +9,10 @@
   margin-right: 50px;
 }
 
+.active {
+  opacity: 1;
+}
+
 .navbar-brand {
   font-family: $logoFont;
   font-weight: $light;
