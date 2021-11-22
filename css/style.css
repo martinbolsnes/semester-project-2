@@ -211,33 +211,6 @@ i {
   -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  opacity: 1;
-  -webkit-transition: 0.5 ease;
-  transition: 0.5 ease;
-  -webkit-backface-visibility: hidden;
-          backface-visibility: hidden;
-}
-
-.card:hover .card-img-top {
-  opacity: 0.4;
-  cursor: pointer;
-}
-
-.card:hover .hoverText_container {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.hoverText_container {
-  -webkit-transition: 0.5 ease;
-  transition: 0.5 ease;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  opacity: 0;
 }
 
 .card-body {
@@ -258,8 +231,32 @@ i {
 }
 
 .card-text-title {
-  font-weight: 600;
   margin-bottom: 0;
+}
+
+.card-text-price {
+  font-weight: 600;
+}
+
+.btn-primary {
+  color: #000000 !important;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: #f6f5f4 !important;
+  border: solid 1px #737164 !important;
+}
+
+.btn-primary:hover {
+  background-color: #737164 !important;
+  border: solid 1px #737164 !important;
+  color: #f6f5f4 !important;
+}
+
+.btn-secondary:hover {
+  background-color: #737164 !important;
+  color: #f6f5f4 !important;
 }
 
 .aboutSection {

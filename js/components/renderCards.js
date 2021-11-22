@@ -6,12 +6,11 @@ export function renderCards(productsToRender) {
     productsCards.innerHTML += `<div class="col-lg-4 col-md-6 col-6">
         <div class="card h-100">
         <img src="${element.image_url}" class="card-img-top" alt="${element.title}">
-        <div class="hoverText_container">
-        <h2 class="hoverText">view more</h2></div>
         <div class="card-body">
           <p class="card-text card-text-title">${element.title}</p>
-          <p class="card-text card-text-price">${element.price} $</p>
+          <p class="card-text card-text-price">$ ${element.price}</p>
         </div>
+        <a href="" class="btn btn-primary streched-link">view more</a>
       </div>
       </div>`;
   });

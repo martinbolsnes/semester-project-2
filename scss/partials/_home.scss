@@ -55,29 +55,6 @@
   object-fit: cover;
   box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
   border-radius: 4px;
-  opacity: 1;
-  transition: 0.5 ease;
-  backface-visibility: hidden;
-}
-
-.card:hover .card-img-top {
-  opacity: 0.4;
-  cursor: pointer;
-}
-
-.card:hover .hoverText_container {
-  opacity: 1;
-  cursor: pointer;
-}
-
-.hoverText_container {
-  transition: 0.5 ease;
-  transform: translate(-50%, -50%);
-  -ms-transform: translate(-50%, -50%);
-  position: absolute;
-  top: 45%;
-  left: 50%;
-  opacity: 0;
 }
 
 .card-body {
@@ -92,8 +69,32 @@
 }
 
 .card-text-title {
-  font-weight: $semi-bold;
   margin-bottom: 0;
+}
+
+.card-text-price {
+  font-weight: $semi-bold;
+}
+
+.btn-primary {
+  color: $black !important;
+}
+
+.btn-primary,
+.btn-secondary {
+  background-color: $bgColor !important;
+  border: solid 1px $olive !important;
+}
+
+.btn-primary:hover {
+  background-color: $olive !important;
+  border: solid 1px $olive !important;
+  color: $bgColor !important;
+}
+
+.btn-secondary:hover {
+  background-color: $olive !important;
+  color: $bgColor !important;
 }
 
 .aboutSection {
