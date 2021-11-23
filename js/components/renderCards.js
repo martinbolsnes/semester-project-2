@@ -10,7 +10,7 @@ export function renderCards(productsToRender) {
           <p class="card-text card-text-title">${element.title}</p>
           <p class="card-text card-text-price">$ ${element.price}</p>
         </div>
-        <a href="" class="btn btn-primary streched-link">view more</a>
+        <a href="details.html?id=${element.id}" class="btn btn-primary streched-link">view more</a>
       </div>
       </div>`;
   });

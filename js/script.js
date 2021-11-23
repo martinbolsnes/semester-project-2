@@ -18,7 +18,7 @@ async function getFeaturedCards() {
           <p class="card-text card-text-title">${apiResults[i].title}</p>
           <p class="card-text card-text-price">$ ${apiResults[i].price}</p>
         </div>
-        <a href="" class="btn btn-secondary streched-link">view more</a>
+        <a href="details.html?id=${apiResults[i].id}" class="btn btn-secondary streched-link">view more</a>
       </div>
       </div>`;
       }
