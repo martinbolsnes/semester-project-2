@@ -459,7 +459,13 @@ i {
 }
 
 .accordion__container {
-  width: 45% !important;
   margin-top: 40px;
+}
+
+@media (max-width: 576px) {
+  .details__img--container {
+    height: 250px;
+    margin-bottom: 20px;
+  }
 }
 /*# sourceMappingURL=style.css.map */
