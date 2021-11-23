@@ -370,6 +370,7 @@ i {
   }
   .about__text--paragraph {
     width: 90%;
+    font-size: 1rem;
   }
   .about__img4,
   .about__img3,
