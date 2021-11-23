@@ -316,9 +316,8 @@ i {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
-  border: solid 1px #737164 !important;
-  -webkit-box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
-          box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.25);
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 @media (max-width: 1024px) {
