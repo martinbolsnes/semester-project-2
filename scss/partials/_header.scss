@@ -1,12 +1,21 @@
 .menu {
   box-shadow: 0px 1px 12px rgba(0, 0, 0, 0.04);
   width: 100%;
+  background-color: $bgColor !important;
 }
 
 .navbar {
-  background-color: $bgColor !important;
   margin-left: 50px;
   margin-right: 50px;
+  background-color: $bgColor !important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 12;
 }
 
 .active {
