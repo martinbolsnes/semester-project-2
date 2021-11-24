@@ -1,0 +1,36 @@
+.heading-container {
+  margin-top: 100px;
+  margin-bottom: 40px;
+}
+
+.cartCard {
+  display: flex;
+  flex-direction: row !important;
+}
+
+.cartCard-img {
+  width: 45% !important;
+  height: 250px;
+  margin-bottom: 20px;
+  margin-right: 20px;
+}
+
+.cartCard-body {
+  display: flex;
+  justify-content: space-between !important;
+}
+
+.feather-x-circle {
+  display: block;
+}
+.totalPrice_container {
+  border-left: solid 1px $olive;
+  border-top: none;
+}
+
+@media (max-width: 768px) {
+  .totalPrice_container {
+    border-left: none;
+    border-top: solid 1px $olive;
+  }
+}
