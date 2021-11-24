@@ -568,5 +568,16 @@ i {
     border-left: none;
     border-top: solid 1px #737164;
   }
+  .cartCard-img {
+    height: 200px;
+    width: 35% !important;
+  }
+}
+
+@media (max-width: 576px) {
+  .cartCard-img {
+    height: 100px;
+    width: 35% !important;
+  }
 }
 /*# sourceMappingURL=style.css.map */
