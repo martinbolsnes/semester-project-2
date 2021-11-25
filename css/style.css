@@ -21,7 +21,8 @@ h3 {
 
 p,
 a,
-li a {
+li a,
+label {
   font-family: "Montserrat", sans-serif;
   color: #000000 !important;
 }
@@ -152,10 +153,6 @@ i {
 
 .SoMe {
   margin: 5px;
-}
-
-.alert {
-  display: none;
 }
 
 .hero__container {
@@ -554,6 +551,11 @@ i {
           justify-content: space-evenly !important;
 }
 
+.removeBtn {
+  border: none;
+  background-color: transparent;
+}
+
 .feather-x-circle {
   display: block;
 }
@@ -579,5 +581,20 @@ i {
     height: 100px;
     width: 35% !important;
   }
+}
+
+.login_container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.submitBtn {
+  background-color: #737164 !important;
+  color: #f6f5f4 !important;
+}
+
+.submitBtn:hover {
+  background-color: #f6f5f4 !important;
+  color: #737164 !important;
 }
 /*# sourceMappingURL=style.css.map */

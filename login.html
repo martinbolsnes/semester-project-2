@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&family=Montserrat:wght@400;500;600;700&family=MuseoModerno:wght@300&display=swap"
       rel="stylesheet"
     />
-    <title>Shop - amenity.</title>
+    <title>Login - amenity.</title>
   </head>
   <body>
     <header class="menu fixed-top container-fluid">
@@ -61,7 +61,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link" href="index.html"
+                <a class="nav-link active" href="index.html"
                   >home<svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -81,7 +81,7 @@
                 ></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="products.html"
+                <a class="nav-link" href="products.html"
                   >products<svg
                     xmlns="http://www.w3.org/2000/svg"
                     width="24"
@@ -124,7 +124,7 @@
               </li>
             </ul>
             <div class="login">
-              <a class="loginBtn" href="login.html"
+              <a class="loginBtn"
                 >login<svg
                   xmlns="http://www.w3.org/2000/svg"
                   width="24"
@@ -146,26 +146,35 @@
       </nav>
     </header>
     <main>
-      <div class="alert"></div>
-      <div class="heading__container container">
-        <h1 class="shopHeading">Products</h1>
-      </div>
-      <div class="container filter__container">
-        <div class="search mb-3">
-          <input
-            type="text"
-            class="form-control searchInput"
-            placeholder="Search..."
-            aria-label="Search"
-            aria-describedby="basic-addon1"
-          />
+      <div class="container login_container">
+        <div class="row">
+          <div class="login_header col-sm-12">
+            <h1>Log in as an administrator</h1>
+          </div>
+          <div class="alert col-sm-12"></div>
+          <div class="form_container col-sm-6">
+            <form class="loginForm">
+              <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="email"
+                  aria-describedby="emailHelp"
+                />
+              </div>
+              <div class="mb-3">
+                <label for="password" class="form-label">Password</label>
+                <input type="password" class="form-control" id="password" />
+              </div>
+              <div class="mb-3 form-check"></div>
+              <button type="submit" class="btn btn-primary submitBtn">
+                Login
+              </button>
+            </form>
+          </div>
         </div>
       </div>
-      <section class="productsSection">
-        <div class="container products__container">
-          <div class="row row-cols-3 g-4 products--cards"></div>
-        </div>
-      </section>
     </main>
     <footer>
       <div class="container-fluid footer__container">
@@ -191,7 +200,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="./js/products.js"></script>
-    <script type="module" src="./js/filter.js"></script>
+    <script type="module" src="./js/login.js"></script>
   </body>
 </html>

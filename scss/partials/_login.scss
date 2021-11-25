@@ -1,0 +1,14 @@
+.login_container {
+  margin-top: 100px;
+  margin-bottom: 50px;
+}
+
+.submitBtn {
+  background-color: $olive !important;
+  color: $bgColor !important;
+}
+
+.submitBtn:hover {
+  background-color: $bgColor !important;
+  color: $olive !important;
+}
