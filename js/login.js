@@ -4,7 +4,6 @@ import {
   testLengthofTextBoxValue,
   testEmailAddress,
 } from "./libs/validation.js";
-import { BASE_URL } from "./configs/configs.js";
 
 let login = document.querySelector(".submitBtn");
 let email = document.querySelector("#email");
@@ -29,7 +28,7 @@ login.onsubmit = async function (event) {
 
       saveToLocalStorage("user", data.user);
 
-      window.location.href = "./home.html";
+      window.location.href = "./dashboard.html";
     } catch (error) {
       alert("alert-danger", "Your email or password is incorrect");
     }

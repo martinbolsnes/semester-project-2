@@ -1,0 +1,16 @@
+.sub-menu {
+  border-bottom: solid 1px $olive;
+}
+
+.table-container,
+.sub-menu {
+  margin-top: 40px;
+}
+
+thead {
+  background-color: $shiplap !important;
+}
+
+tbody {
+  background-color: $bgColor !important;
+}

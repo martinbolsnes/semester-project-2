@@ -21,9 +21,16 @@ h3 {
 p,
 a,
 li a,
-label {
+label,
+th,
+td {
   font-family: "Montserrat", sans-serif;
   color: $black !important;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
 }
 
 li a {

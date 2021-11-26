@@ -22,9 +22,16 @@ h3 {
 p,
 a,
 li a,
-label {
+label,
+th,
+td {
   font-family: "Montserrat", sans-serif;
   color: #000000 !important;
+}
+
+ul li {
+  text-decoration: none;
+  list-style: none;
 }
 
 li a {
@@ -106,7 +113,10 @@ i {
 }
 
 @media (min-width: 992px) {
-  .feather {
+  .feather-home,
+  .feather-shopping-cart,
+  .feather-shopping-bag,
+  .feather-user {
     display: none;
   }
 }
@@ -377,7 +387,7 @@ i {
 }
 
 .heading__container {
-  margin-top: 100px;
+  margin-top: 40px;
 }
 
 .shopHeading {
@@ -521,7 +531,7 @@ i {
 }
 
 .heading-container {
-  margin-top: 100px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -591,10 +601,41 @@ i {
 .submitBtn {
   background-color: #737164 !important;
   color: #f6f5f4 !important;
+  font-family: "Montserrat", sans-serif;
+  -webkit-box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+          box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 .submitBtn:hover {
   background-color: #f6f5f4 !important;
-  color: #737164 !important;
+  color: #000000 !important;
+}
+
+input {
+  background-color: rgba(230, 231, 220, 0.1) !important;
+  border: 1px solid #737164 !important;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  -webkit-box-shadow: inset 0px 4px 10px rgba(115, 113, 100, 0.25) !important;
+          box-shadow: inset 0px 4px 10px rgba(115, 113, 100, 0.25) !important;
+  border-radius: 2px;
+  color: #000000;
+}
+
+.sub-menu {
+  border-bottom: solid 1px #737164;
+}
+
+.table-container,
+.sub-menu {
+  margin-top: 40px;
+}
+
+thead {
+  background-color: #bdb6aa !important;
+}
+
+tbody {
+  background-color: #f6f5f4 !important;
 }
 /*# sourceMappingURL=style.css.map */

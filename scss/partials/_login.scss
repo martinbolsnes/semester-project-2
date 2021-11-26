@@ -6,9 +6,20 @@
 .submitBtn {
   background-color: $olive !important;
   color: $bgColor !important;
+  font-family: "Montserrat", sans-serif;
+  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
 }
 
 .submitBtn:hover {
   background-color: $bgColor !important;
-  color: $olive !important;
+  color: $black !important;
+}
+
+input {
+  background-color: rgba(230, 231, 220, 0.1) !important;
+  border: 1px solid $olive !important;
+  box-sizing: border-box;
+  box-shadow: inset 0px 4px 10px rgba(115, 113, 100, 0.25) !important;
+  border-radius: 2px;
+  color: $black;
 }
