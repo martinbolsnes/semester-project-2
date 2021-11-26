@@ -35,12 +35,18 @@
   box-shadow: none !important;
 }
 
-.loginBtn {
+.loginBtn,
+.logoutBtn {
   font-size: 1.2rem;
   opacity: 0.6;
 }
 
-.loginBtn:hover {
+.logoutBtn {
+  color: $red !important;
+}
+
+.loginBtn:hover,
+.logoutBtn:hover {
   opacity: 1;
   cursor: pointer;
 }

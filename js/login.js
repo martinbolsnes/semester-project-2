@@ -4,12 +4,13 @@ import {
   testLengthofTextBoxValue,
   testEmailAddress,
 } from "./libs/validation.js";
+import { BASE_URL } from "./configs/configs.js";
 
-let login = document.querySelector(".submitBtn");
+let form = document.querySelector(".loginForm");
 let email = document.querySelector("#email");
 let password = document.querySelector("#password");
 
-login.onsubmit = async function (event) {
+form.onsubmit = async function (event) {
   event.preventDefault();
 
   if (

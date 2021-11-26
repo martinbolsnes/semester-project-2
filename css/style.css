@@ -95,12 +95,18 @@ i {
           box-shadow: none !important;
 }
 
-.loginBtn {
+.loginBtn,
+.logoutBtn {
   font-size: 1.2rem;
   opacity: 0.6;
 }
 
-.loginBtn:hover {
+.logoutBtn {
+  color: #b65242 !important;
+}
+
+.loginBtn:hover,
+.logoutBtn:hover {
   opacity: 1;
   cursor: pointer;
 }
@@ -611,7 +617,8 @@ i {
   color: #000000 !important;
 }
 
-input {
+input,
+textarea {
   background-color: rgba(230, 231, 220, 0.1) !important;
   border: 1px solid #737164 !important;
   -webkit-box-sizing: border-box;
@@ -637,5 +644,9 @@ thead {
 
 tbody {
   background-color: #f6f5f4 !important;
+}
+
+.edit_container {
+  margin-top: 20px;
 }
 /*# sourceMappingURL=style.css.map */

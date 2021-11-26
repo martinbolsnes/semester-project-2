@@ -21,7 +21,7 @@
       href="https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400&family=Montserrat:wght@400;500;600;700&family=MuseoModerno:wght@300&display=swap"
       rel="stylesheet"
     />
-    <title>Dashboard - amenity.</title>
+    <title>Add product - amenity.</title>
   </head>
   <body class="d-flex flex-column min-vh-100">
     <header class="menu fixed-top container-fluid">
@@ -149,7 +149,7 @@
       <div class="container sub-menu">
         <ul class="nav">
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#"
+            <a class="nav-link active" aria-current="page" href="dashboard.html"
               >dashboard</a
             >
           </li>
@@ -158,38 +158,41 @@
           </li>
         </ul>
       </div>
-      <div class="container table-container">
-        <table class="table table-striped">
-          <thead>
-            <tr>
-              <th scope="col">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="24"
-                  height="24"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="black"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                  class="feather feather-hash"
-                >
-                  <line x1="4" y1="9" x2="20" y2="9"></line>
-                  <line x1="4" y1="15" x2="20" y2="15"></line>
-                  <line x1="10" y1="3" x2="8" y2="21"></line>
-                  <line x1="16" y1="3" x2="14" y2="21"></line>
-                </svg>
-              </th>
-              <th scope="col">Id</th>
-              <th scope="col">Title</th>
-              <th scope="col">Price</th>
-              <th scope="col">Edit</th>
-              <th scope="col">Delete</th>
-            </tr>
-          </thead>
-          <tbody class="table-body"></tbody>
-        </table>
+      <div class="container edit_container">
+        <div class="row">
+          <div class="edit_header col-sm-12">
+            <h1>Add product</h1>
+          </div>
+          <div class="alert col-sm-12"></div>
+          <div class="form_container col-sm-6">
+            <form class="addForm">
+              <div class="mb-3">
+                <label for="title" class="form-label">Title</label>
+                <input type="text" class="form-control" id="titleInput" />
+              </div>
+              <div class="mb-3">
+                <label for="price" class="form-label">Price</label>
+                <input type="text" class="form-control" id="priceInput" />
+              </div>
+              <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea
+                  class="form-control"
+                  rows="3"
+                  id="descriptionInput"
+                ></textarea>
+              </div>
+              <div class="mb-3">
+                <label for="image" class="form-label">Image URL</label>
+                <input type="text" class="form-control" id="imageInput" />
+              </div>
+              <div class="mb-3 form-check"></div>
+              <button type="submit" class="btn btn-primary submitBtn">
+                Add product
+              </button>
+            </form>
+          </div>
+        </div>
       </div>
     </main>
     <footer class="mt-auto">
@@ -216,6 +219,6 @@
       crossorigin="anonymous"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
-    <script type="module" src="./js/dashboard.js"></script>
+    <script type="module" src="./js/addProduct.js"></script>
   </body>
 </html>

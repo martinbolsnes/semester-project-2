@@ -15,7 +15,8 @@
   color: $black !important;
 }
 
-input {
+input,
+textarea {
   background-color: rgba(230, 231, 220, 0.1) !important;
   border: 1px solid $olive !important;
   box-sizing: border-box;
