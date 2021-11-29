@@ -1,5 +1,5 @@
-import { getUser } from "./localStorageHelper,js";
+import { getUser } from "./localStorageHelper.js";
 
 if (getUser("jwt") === null) {
-  window.location.href = "./login.html";
+  window.location.href = "login.html";
 }
