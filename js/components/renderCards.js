@@ -5,7 +5,7 @@ export function renderCards(productsToRender) {
   productsToRender.forEach(function (element) {
     productsCards.innerHTML += `<div class="col-lg-4 col-md-6 col-6">
         <div class="card h-100">
-        <img src="${element.image_url}" class="card-img-top" alt="${element.title}">
+        <img src="${element.image_url}" class="card-img-top" alt="${element.title} - amenity.">
         <div class="card-body">
           <p class="card-text card-text-title">${element.title}</p>
           <p class="card-text card-text-price">$ ${element.price}</p>

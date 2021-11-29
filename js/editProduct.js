@@ -1,5 +1,5 @@
 import alert from "./components/alert.js";
-import { BASE_URL, headers } from "./configs/configs.js";
+import { BASE_URL, header } from "./configs/configs.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -35,7 +35,7 @@ form.onsubmit = async function (event) {
   const response = await axios.put(
     `${BASE_URL}/products/${id}`,
     updatedProduct,
-    headers
+    header
   );
 
   alert("alert-success", "Product has been updated successfully");

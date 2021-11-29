@@ -1,5 +1,5 @@
 import alert from "./components/alert.js";
-import { BASE_URL, headers } from "./configs/configs.js";
+import { BASE_URL, header } from "./configs/configs.js";
 
 let productForm = document.querySelector(".addForm");
 
@@ -18,11 +18,7 @@ productForm.onsubmit = async function (event) {
       image_url: image.value,
     };
 
-    let response = await axios.post(
-      `${BASE_URL}/products`,
-      newProduct,
-      headers
-    );
+    let response = await axios.post(`${BASE_URL}/products`, newProduct, header);
     alert("alert-succsess", "Product has been added succsessfully");
     title.value = "";
     price.value = "";
