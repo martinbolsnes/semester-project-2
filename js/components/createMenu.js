@@ -111,7 +111,7 @@ import { getUser } from "../libs/localStorageHelper.js";
           </li>
         </ul>
         <div class="logout">
-          <a class="logoutBtn"
+          <a><button type="button" class="logout" data-bs-toggle="modal" data-bs-target="#exampleModal"
             >logout<svg
               xmlns="http://www.w3.org/2000/svg"
               width="24"
@@ -126,7 +126,8 @@ import { getUser } from "../libs/localStorageHelper.js";
             >
               <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
               <circle cx="12" cy="7" r="4"></circle></svg
-          ></a>
+          ></button>
+          </a>
         </div>
       </div>
     </div>
