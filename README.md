@@ -1,3 +1,4 @@
-# Strapi application
+# Semester Project 2
 
-A quick description of your strapi application
+Username/email : admin@admin.com
+Password: Pass1234
