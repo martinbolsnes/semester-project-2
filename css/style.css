@@ -207,6 +207,7 @@ i {
 .spinner-border {
   position: absolute !important;
   top: 0;
+  margin-top: 10px;
 }
 
 .heroHeading {
