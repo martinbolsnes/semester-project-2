@@ -13,10 +13,6 @@ if (cartObjects === undefined || cartObjects.length === 0) {
 }
 console.log(cartObjects);
 
-let total = 0;
-
-document.querySelector(".totalPrice").innerHTML += total;
-
 cartObjects.forEach((element) => {
   document.querySelector(".checkoutBtn").classList.remove("disabled");
   document.querySelector(".cart_objects").innerHTML += `
@@ -51,3 +47,14 @@ cartObjects.forEach((element) => {
     };
   });
 });
+
+const sumItems = () => {
+  let sum = 0;
+  cartObjects.forEach(function (item) {
+    let calculation = parseInt(item.price);
+    sum += calculation;
+    document.querySelector(".totalPrice").innerHTML = "$ " + sum;
+  });
+  console.log(sum);
+};
+sumItems();

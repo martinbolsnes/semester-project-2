@@ -33,10 +33,22 @@
   border-top: none;
 }
 
+.totalPrice {
+  font-weight: $semi-bold;
+}
+
+/* .checkoutBtn {
+  padding: 10px 30px 10px 30px !important;
+} */
+
 @media (max-width: 768px) {
   .totalPrice_container {
     border-left: none;
     border-top: solid 1px $olive;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 20px;
   }
 
   .cartCard-img {

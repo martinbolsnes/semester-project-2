@@ -32,7 +32,7 @@ async function getProduct(productId) {
 
     document.querySelector(
       ".btnDiv"
-    ).innerHTML = `<button type="button" class="btn addToCartBtn" data-id="${apiResults.id}" data-title="${apiResults.title}" data-image_url="${apiResults.image_url}" data-price="${apiResults.price}">
+    ).innerHTML = `<button type="button" class="btn primary-btn addToCartBtn" data-id="${apiResults.id}" data-title="${apiResults.title}" data-image_url="${apiResults.image_url}" data-price="${apiResults.price}">
     Add to cart
     <svg
       xmlns="http://www.w3.org/2000/svg"
