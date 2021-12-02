@@ -182,10 +182,14 @@
 
   .hero__text--container {
     width: 80% !important;
+    height: fit-content;
   }
 
   .hero__text {
     font-size: 1rem;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
   }
 
   .feather-award,
@@ -194,6 +198,8 @@
     height: 20px;
     width: 20px;
     stroke-width: 1;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .card-text {
