@@ -1,7 +1,7 @@
-import { getUser } from "../libs/localStorageHelper.js";
+import { getUser } from '../libs/localStorageHelper.js';
 
 (function () {
-  if (getUser("user")) {
+  if (getUser('user')) {
     document.querySelector(
       ".menu"
     ).innerHTML += `<nav class="navbar navbar-expand-lg">
