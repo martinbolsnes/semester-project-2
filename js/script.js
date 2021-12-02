@@ -9,6 +9,8 @@ async function getFeaturedCards() {
     let apiResults = response.data;
     console.log(apiResults);
 
+    document.querySelector(".spinner-border").style.display = "none";
+
     for (let i = 0; i < apiResults.length; i++) {
       if (apiResults[i].featured === true) {
         featuredCards.innerHTML += `<div class="col-lg-4 col-md-6 col-6">

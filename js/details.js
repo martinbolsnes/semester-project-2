@@ -3,6 +3,7 @@ import {
   getStorageItem,
   saveToLocalStorage,
 } from "./libs/localStorageHelper.js";
+import alert from "./components/alert.js";
 
 const queryString = document.location.search;
 const params = new URLSearchParams(queryString);
@@ -59,6 +60,8 @@ async function getProduct(productId) {
 
     addToCartBtn.forEach((element) => {
       element.onclick = function () {
+        element.classList.add("disabled");
+        alert("alert-success", "Item added to cart");
         let localStorageObject = {
           id: element.dataset.id,
           title: element.dataset.title,

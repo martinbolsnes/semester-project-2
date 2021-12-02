@@ -19,7 +19,7 @@ productForm.onsubmit = async function (event) {
     };
 
     let response = await axios.post(`${BASE_URL}/products`, newProduct, header);
-    alert("alert-succsess", "Product has been added succsessfully");
+    alert("alert-success", "Product has been added succsessfully");
     title.value = "";
     price.value = "";
     description.value = "";

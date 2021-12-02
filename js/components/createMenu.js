@@ -4,7 +4,7 @@ import { getUser } from "../libs/localStorageHelper.js";
   if (getUser("user")) {
     document.querySelector(
       ".menu"
-    ).innerHTML = `<nav class="navbar navbar-expand-lg">
+    ).innerHTML += `<nav class="navbar navbar-expand-lg">
     <div class="container">
       <div class="logo">
         <a class="navbar-brand" href="index.html">amenity.</a>

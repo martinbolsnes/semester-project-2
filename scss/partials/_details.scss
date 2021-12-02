@@ -1,5 +1,5 @@
 .detailsSection {
-  margin-top: 100px !important;
+  margin-top: 50px !important;
 }
 
 .details__img--container {
@@ -23,7 +23,8 @@
   font-size: 1.2rem;
 }
 
-.addToCartBtn {
+.addToCartBtn,
+.checkoutBtn {
   margin-bottom: 20px;
   margin-top: 15px;
   background-color: $olive !important;
@@ -36,6 +37,12 @@
 .addToCartBtn:hover {
   background-color: $bgColor !important;
   color: $olive !important;
+}
+
+.disabled {
+  background-color: $bgColor !important;
+  color: $olive !important;
+  cursor: none;
 }
 
 .cartIcon {
