@@ -87,3 +87,9 @@
     text-align: center;
   }
 }
+
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.8rem !important;
+  }
+}

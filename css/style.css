@@ -160,6 +160,12 @@ i {
   }
 }
 
+@media (max-width: 576px) {
+  .navbar-brand {
+    font-size: 1.8rem !important;
+  }
+}
+
 .footer__container {
   display: -webkit-box;
   display: -ms-flexbox;
