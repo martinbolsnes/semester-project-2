@@ -11,11 +11,10 @@ if (cartObjects === undefined || cartObjects.length === 0) {
     <h4>Your cart is empty</h4></div>`;
   document.querySelector(".checkoutBtn").classList.add("disabled");
 }
-console.log(cartObjects);
 
 cartObjects.forEach((element) => {
   document.querySelector(".checkoutBtn").classList.remove("disabled");
-  document.querySelector(".cart_objects").innerHTML += `
+  cartItems.innerHTML += `
         <div class="card cartCard">
         <img src="${element.image_url}" class="card-img-top cartCard-img" alt="${element.title}">
         <div class="card-body cartCard-body">
@@ -27,7 +26,6 @@ cartObjects.forEach((element) => {
       </div>`;
 
   let removeBtns = document.querySelectorAll(".removeBtn");
-  console.log(removeBtns);
 
   removeBtns.forEach(function (element) {
     element.onclick = function () {
@@ -55,6 +53,5 @@ const sumItems = () => {
     sum += calculation;
     document.querySelector(".totalPrice").innerHTML = "$ " + sum;
   });
-  console.log(sum);
 };
 sumItems();
