@@ -145,7 +145,7 @@ import { getUser } from "../libs/localStorageHelper.js";
       ".menu"
     ).innerHTML = `<nav class="navbar navbar-expand-lg">
       <div class="container">
-        <div class="logo">
+      <div class="logo">
           <a class="navbar-brand" href="index.html">amenity.</a>
         </div>
         <button
@@ -264,3 +264,12 @@ import { getUser } from "../libs/localStorageHelper.js";
     </nav>`;
   }
 })();
+
+const currentLocation = location.href;
+const navLinks = document.querySelectorAll("ul li a");
+
+for (let i = 0; i < navLinks.length; i++) {
+  if (navLinks[i].href === currentLocation) {
+    navLinks[i].classList.add("active");
+  }
+}

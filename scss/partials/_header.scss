@@ -27,6 +27,8 @@
   font-weight: $light;
   color: $black !important;
   font-size: 2.2rem !important;
+  text-shadow: 2px 8px 6px rgba(115, 113, 100, 0.2),
+    0px -5px 15px rgba(115, 113, 100, 0.3);
 }
 
 .navbar-toggler:focus {
