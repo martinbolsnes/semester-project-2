@@ -1,4 +1,5 @@
-import { BASE_URL, header } from "./configs/configs.js";
+import { BASE_URL } from "./configs/configs.js";
+import { header } from "./configs/header.js";
 
 async function getProductInfoDashboard() {
   let response = await axios.get(`${BASE_URL}/products`);

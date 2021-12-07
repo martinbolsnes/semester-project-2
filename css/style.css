@@ -41,6 +41,7 @@ li a {
 
 li a:hover {
   opacity: 1;
+  font-weight: 500;
 }
 
 a {
@@ -92,6 +93,7 @@ i {
 
 .active {
   opacity: 1;
+  font-weight: 500 !important;
 }
 
 .navbar-brand {
