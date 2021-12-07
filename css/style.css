@@ -172,6 +172,10 @@ i {
 }
 
 .footer__container {
+  height: 200px;
+  background-color: #bdb6aa;
+  text-align: center;
+  margin-top: 40px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -179,15 +183,9 @@ i {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  height: 200px;
-  background-color: #bdb6aa;
-  margin-top: 40px;
 }
 
 .SoMe_container {
@@ -199,6 +197,18 @@ i {
       -ms-flex-direction: row;
           flex-direction: row;
   margin-bottom: 20px;
+}
+
+.SoMe_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .SoMe {
