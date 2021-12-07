@@ -40,7 +40,6 @@ li a {
 
 li a:hover {
   opacity: 1;
-  font-weight: $medium;
 }
 
 a {
@@ -66,4 +65,8 @@ i {
   padding: 10px 30px 10px 30px !important;
   font-family: "Montserrat", sans-serif;
   font-weight: $semi-bold !important;
+}
+
+.alert {
+  margin-bottom: 0 !important;
 }

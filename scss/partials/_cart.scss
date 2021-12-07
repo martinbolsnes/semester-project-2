@@ -1,5 +1,5 @@
 .heading-container {
-  margin-top: 40px;
+  margin-top: 10px;
   margin-bottom: 40px;
 }
 
@@ -36,10 +36,6 @@
 .totalPrice {
   font-weight: $semi-bold;
 }
-
-/* .checkoutBtn {
-  padding: 10px 30px 10px 30px !important;
-} */
 
 @media (max-width: 768px) {
   .totalPrice_container {
