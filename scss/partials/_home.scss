@@ -166,42 +166,16 @@
   margin-bottom: 50px;
 }
 
-.about__text--container {
+.about__container {
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  align-items: center;
   justify-content: center;
+  flex-direction: column;
 }
 
 .about__text--paragraph {
   font-size: 1.3rem;
-}
-
-.about__img1 {
-  background-image: url("/img/kam-idris-_HqHX3LBN18-unsplash_11zon.jpg");
-}
-
-.about__img2 {
-  background-image: url("/img/spacejoy-jfVTVARGCao-unsplash_11zon.jpg");
-}
-
-.about__img3 {
-  background-image: url("/img/spacejoy-trG8989WjFA-unsplash_11zon.jpg");
-}
-
-.about__img4 {
-  background-image: url("/img/spacejoy-vPKNB_gc23Q-unsplash-min.jpg");
-}
-
-.about__img1,
-.about__img2,
-.about__img3,
-.about__img4 {
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
-  box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
+  width: 70%;
 }
 
 @media (max-width: 1024px) {
@@ -241,6 +215,7 @@
   .trust__text {
     font-size: 0.9rem;
   }
+
   .slider-img {
     height: 350px !important;
   }
@@ -319,12 +294,5 @@
   .about__text--paragraph {
     width: 90%;
     font-size: 1rem;
-  }
-
-  .about__img4,
-  .about__img3,
-  .about__img2,
-  .about__img1 {
-    height: 150px;
   }
 }
