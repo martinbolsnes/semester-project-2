@@ -10,6 +10,8 @@ productForm.onsubmit = async function (event) {
   const price = document.querySelector("#priceInput");
   const description = document.querySelector("#descriptionInput");
   const image = document.querySelector("#imageInput");
+  const checkbox = document.querySelector("#defaultCheck1");
+  const isFeatured = checkbox.checked;
 
   try {
     let newProduct = {
@@ -17,6 +19,7 @@ productForm.onsubmit = async function (event) {
       price: price.value,
       description: description.value,
       image_url: image.value,
+      featured: checkbox.checked,
     };
 
     let response = await axios.post(`${BASE_URL}/products`, newProduct, header);
@@ -25,5 +28,6 @@ productForm.onsubmit = async function (event) {
     price.value = "";
     description.value = "";
     image_url.value = "";
+    isFeatured = "";
   } catch {}
 };

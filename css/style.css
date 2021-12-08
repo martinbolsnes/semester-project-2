@@ -84,6 +84,9 @@ i {
   margin-left: 50px;
   margin-right: 50px;
   background-color: #f6f5f4 !important;
+  -webkit-box-pack: justify !important;
+      -ms-flex-pack: justify !important;
+          justify-content: space-between !important;
 }
 
 .fixed-top {
@@ -677,7 +680,7 @@ i {
 }
 
 .heading-container {
-  margin-top: 10px;
+  margin-top: 40px;
   margin-bottom: 40px;
 }
 
@@ -801,5 +804,13 @@ tbody {
 
 .edit_container {
   margin-top: 20px;
+}
+
+.form-check {
+  margin-bottom: 30px !important;
+}
+
+.form-check-input:checked {
+  background-color: #737164 !important;
 }
 /*# sourceMappingURL=style.css.map */

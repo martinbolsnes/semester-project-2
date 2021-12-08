@@ -5,7 +5,6 @@ import { getUser } from "../libs/localStorageHelper.js";
     document.querySelector(
       ".menu"
     ).innerHTML += `<nav class="navbar navbar-expand-lg">
-    <div class="container">
       <div class="logo">
         <a class="navbar-brand" href="index.html">amenity.</a>
       </div>
@@ -19,22 +18,7 @@ import { getUser } from "../libs/localStorageHelper.js";
         aria-label="Toggle navigation"
       >
         <span class="navbar-toggler-icon">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="24"
-            height="24"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="black"
-            stroke-width="2"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            class="feather feather-menu"
-          >
-            <line x1="3" y1="12" x2="21" y2="12"></line>
-            <line x1="3" y1="6" x2="21" y2="6"></line>
-            <line x1="3" y1="18" x2="21" y2="18"></line>
-          </svg>
+        <img src="./img/menu.svg">
         </span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -130,7 +114,7 @@ import { getUser } from "../libs/localStorageHelper.js";
           </a>
         </div>
       </div>
-    </div>
+
   </nav>`;
 
     const logOut = document.querySelector(".logoutBtn");
@@ -144,7 +128,7 @@ import { getUser } from "../libs/localStorageHelper.js";
     document.querySelector(
       ".menu"
     ).innerHTML = `<nav class="navbar navbar-expand-lg">
-      <div class="container">
+      
       <div class="logo">
           <a class="navbar-brand" href="index.html">amenity.</a>
         </div>
@@ -158,22 +142,7 @@ import { getUser } from "../libs/localStorageHelper.js";
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="black"
-              stroke-width="2"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              class="feather feather-menu"
-            >
-              <line x1="3" y1="12" x2="21" y2="12"></line>
-              <line x1="3" y1="6" x2="21" y2="6"></line>
-              <line x1="3" y1="18" x2="21" y2="18"></line>
-            </svg>
+          <img src="./img/menu.svg">
           </span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -260,7 +229,6 @@ import { getUser } from "../libs/localStorageHelper.js";
             ></a>
           </div>
         </div>
-      </div>
     </nav>`;
   }
 })();

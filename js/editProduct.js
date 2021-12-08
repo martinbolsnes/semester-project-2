@@ -10,6 +10,8 @@ let title = document.querySelector("#titleInput");
 let price = document.querySelector("#priceInput");
 let description = document.querySelector("#descriptionInput");
 let image = document.querySelector("#imageInput");
+let checkbox = document.querySelector("#defaultCheck1");
+let isFeatured = checkbox.checked;
 let form = document.querySelector(".editForm");
 
 async function getSpecificProduct() {
@@ -20,6 +22,13 @@ async function getSpecificProduct() {
   price.value = product.price;
   description.value = product.description;
   image.value = product.image_url;
+  isFeatured = product.featured;
+
+  if (isFeatured === true) {
+    checkbox.checked = true;
+  } else {
+    checkbox.checked = false;
+  }
 }
 
 getSpecificProduct();
@@ -31,6 +40,7 @@ form.onsubmit = async function (event) {
     price: price.value,
     description: description.value,
     image_url: image.value,
+    featured: checkbox.checked,
   };
 
   const response = await axios.put(
