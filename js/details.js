@@ -60,8 +60,11 @@ async function getProduct(productId) {
 
     addToCartBtn.forEach((element) => {
       element.onclick = function () {
-        element.classList.add("disabled");
-        alert("alert-success", "Item added to cart");
+        element.classList.add(
+          "disabled",
+          "animate__animated",
+          "animate__rubberBand"
+        );
         let localStorageObject = {
           id: element.dataset.id,
           title: element.dataset.title,
