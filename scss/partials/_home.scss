@@ -12,8 +12,8 @@
   position: relative;
 }
 
-.trust__container {
-  background: rgba(216, 216, 216, 0.7);
+.cta__container {
+  background: rgba(216, 216, 216, 0.6);
   border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
@@ -21,17 +21,29 @@
   border: 1px solid rgba(216, 216, 216, 0.3);
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
   text-align: center;
   position: absolute;
-  bottom: 10px;
+  left: 50px;
   padding: 10px 5px 10px 5px;
-  width: 85% !important;
+  width: 40% !important;
+  height: 80%;
 }
 
-.trust__heading,
-.trust__text {
-  margin-bottom: 0;
+.heroParagraph {
+  width: 70%;
+}
+
+.heroBtn {
+  width: 50%;
+  font-size: 1.3rem !important;
+  font-weight: $light !important;
+}
+
+.heroBtn:hover {
+  background-color: $bgColor !important;
+  color: $olive !important;
 }
 
 .feather-star {
@@ -44,13 +56,18 @@
   margin-top: 10px;
 }
 
-.heroHeading {
+.heroHeading,
+.headingMobile {
   color: $black;
   font-weight: $light;
-  font-size: 3.1rem;
+  font-size: 2.8rem;
   text-align: center;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3), 0px 8px 13px rgba(0, 0, 0, 0.1),
     0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.headingMobile {
+  display: none;
 }
 
 .hero__text--container {
@@ -187,10 +204,6 @@
     font-size: 1.2rem;
   }
 
-  .trust__heading {
-    font-size: 1.4rem;
-  }
-
   .trust__text {
     font-size: 1rem;
   }
@@ -201,12 +214,11 @@
 }
 
 @media (max-width: 768px) {
+  .cta__container {
+    width: 55% !important;
+  }
   .card-img-top {
     height: 250px;
-  }
-
-  .trust__heading {
-    font-size: 1.3rem;
   }
 
   .trust__text {
@@ -221,14 +233,38 @@
 @media (max-width: 576px) {
   .hero__container {
     height: 400px;
+    margin: auto;
+    justify-content: space-evenly;
   }
 
-  .trust__heading {
-    font-size: 1rem;
+  .cta__container {
+    left: 0;
+    width: 60% !important;
+    height: auto;
+    padding: 10px !important;
+    position: relative;
   }
 
-  .trust__text {
-    font-size: 0.7rem;
+  .heroHeading {
+    display: none;
+  }
+
+  .headingMobile {
+    display: block;
+    font-size: 1.7rem;
+  }
+
+  .heroBtn {
+    height: 50px;
+    width: 95%;
+    font-size: 1.2rem !important;
+    margin: auto;
+  }
+
+  .trust__text,
+  .trust__stars,
+  .heroParagraph {
+    display: none;
   }
 
   .feather-star {
@@ -239,10 +275,6 @@
 
   .card-img-top {
     height: 150px;
-  }
-
-  .heroHeading {
-    font-size: 1.5rem;
   }
 
   .hero__text--container {
