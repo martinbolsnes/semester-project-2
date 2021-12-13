@@ -271,6 +271,22 @@ i {
   height: 80%;
 }
 
+.ctaText {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 .heroParagraph {
   width: 70%;
 }
@@ -304,6 +320,11 @@ i {
   font-size: 2.8rem;
   text-align: center;
   text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.3), 0px 8px 13px rgba(0, 0, 0, 0.1), 0px 15px 20px rgba(0, 0, 0, 0.1);
+}
+
+.heroParagraph,
+.heroBtn {
+  margin: 0;
 }
 
 .headingMobile {
