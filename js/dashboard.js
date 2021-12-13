@@ -22,11 +22,14 @@ async function getProductInfoDashboard() {
 
   deleteBtns.forEach(function (deleteBtn) {
     deleteBtn.onclick = async function () {
-      let response = await axios.delete(
-        `${BASE_URL}/products/${deleteBtn.dataset.id}`,
-        header
-      );
-      getProductInfoDashboard();
+      let confirmation = window.confirm("Are you sure you want to delete?");
+      if (confirmation === true) {
+        let response = await axios.delete(
+          `${BASE_URL}/products/${deleteBtn.dataset.id}`,
+          header
+        );
+        window.location.reload();
+      }
     };
   });
 }
