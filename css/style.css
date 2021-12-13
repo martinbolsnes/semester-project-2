@@ -279,11 +279,12 @@ i {
   width: 50%;
   font-size: 1.3rem !important;
   font-weight: 300 !important;
+  border: solid 1px #000000 !important;
 }
 
 .heroBtn:hover {
   background-color: #f6f5f4 !important;
-  color: #737164 !important;
+  color: #000000 !important;
 }
 
 .feather-star {
@@ -497,7 +498,7 @@ i {
     left: 0;
     width: 60% !important;
     height: auto;
-    padding: 10px !important;
+    padding: 20px !important;
     position: relative;
   }
   .heroHeading {
@@ -509,8 +510,8 @@ i {
   }
   .heroBtn {
     height: 50px;
-    width: 95%;
-    font-size: 1.3rem !important;
+    width: 100%;
+    font-size: 1.2rem !important;
     margin: auto;
   }
   .trust__text,
