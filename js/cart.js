@@ -42,6 +42,7 @@ cartObjects.forEach((element) => {
         (productObject) => productObject.id !== localStorageObject.id
       );
       saveToLocalStorage("cartObjects", removedElementArray);
+      window.location.reload();
     };
   });
 });
