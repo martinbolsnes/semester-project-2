@@ -90,6 +90,28 @@
   margin: 0;
 }
 
+.review {
+  height: fit-content;
+  padding: 40px;
+
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    height: 100%;
+    margin: auto !important;
+    padding: 20px;
+  }
+
+  &__text {
+    font-size: 1.1rem;
+  }
+
+  &__person {
+    font-weight: $semi-bold;
+  }
+}
+
 .featuredSection {
   background-color: $gather;
   padding-top: 40px;
@@ -234,10 +256,6 @@
   .trust__text--mobile,
   .heroMobile {
     display: none;
-  }
-
-  .featuredSection {
-    padding-top: 100px;
   }
 }
 

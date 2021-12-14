@@ -382,6 +382,36 @@ i {
   margin: 0;
 }
 
+.review {
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 40px;
+}
+
+.review__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  height: 100%;
+  margin: auto !important;
+  padding: 20px;
+}
+
+.review__text {
+  font-size: 1.1rem;
+}
+
+.review__person {
+  font-weight: 600;
+}
+
 .featuredSection {
   background-color: #ccc3b6;
   padding-top: 40px;
@@ -543,9 +573,6 @@ i {
   .trust__text--mobile,
   .heroMobile {
     display: none;
-  }
-  .featuredSection {
-    padding-top: 100px;
   }
 }
 
