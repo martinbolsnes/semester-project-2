@@ -2,7 +2,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 600px;
+  height: 700px;
   filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
   display: flex;
   flex-direction: column;
@@ -83,7 +83,7 @@
   display: none;
 }
 
-.scrollDown {
+.heroMobile {
   height: 100px;
   display: flex;
   align-items: center;
@@ -231,8 +231,13 @@
 @media (min-width: 576px) {
   .trust__stars--mobile,
   .heroParagraph__mobile,
-  .trust__text--mobile {
+  .trust__text--mobile,
+  .heroMobile {
     display: none;
+  }
+
+  .featuredSection {
+    padding-top: 100px;
   }
 }
 
@@ -281,7 +286,7 @@
     display: none;
   }
 
-  .scrollDown {
+  .heroMobile {
     height: 250px;
     flex-direction: column;
     text-align: center;
@@ -291,10 +296,6 @@
     display: flex;
     flex-direction: row;
     margin-top: 20px;
-  }
-
-  .chevron-down {
-    display: none;
   }
 
   .feather-star {
