@@ -2,7 +2,7 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 550px;
+  height: 600px;
   filter: drop-shadow(4px 12px 12px rgba(189, 182, 170, 0.25));
   display: flex;
   flex-direction: column;
@@ -13,8 +13,7 @@
 }
 
 .cta__container {
-  background: rgba(216, 216, 216, 0.6);
-  border-radius: 10px;
+  background: rgba(216, 216, 216, 0.5);
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
@@ -25,10 +24,10 @@
   justify-content: space-evenly;
   text-align: center;
   position: absolute;
-  left: 50px;
+  right: 0px;
   padding: 10px 5px 10px 5px;
   width: 40% !important;
-  height: 80%;
+  height: 100%;
 }
 
 .ctaText {
@@ -45,13 +44,14 @@
 .heroBtn {
   width: 50%;
   font-size: 1.3rem !important;
-  font-weight: $light !important;
+  font-weight: $light;
   border: solid 1px $black !important;
+  background-color: $bgColor !important;
 }
 
 .heroBtn:hover {
-  background-color: $bgColor !important;
-  color: $black !important;
+  background-color: $olive !important;
+  color: $bgColor !important;
 }
 
 .feather-star {
@@ -83,22 +83,11 @@
   display: none;
 }
 
-.hero__text--container {
-  margin: auto !important;
-  height: 150px;
-}
-
-.feather-award,
-.feather-truck,
-.feather-check-circle {
-  margin-right: 15px;
-}
-
-.hero__text {
-  font-family: $sans-serif;
-  font-weight: $regular;
-  font-size: 1.7rem;
-  text-align: center;
+.scrollDown {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .featuredSection {
@@ -213,10 +202,6 @@
     font-size: 2.2rem;
   }
 
-  .hero__text {
-    font-size: 1.2rem;
-  }
-
   .trust__text {
     font-size: 1rem;
   }
@@ -243,9 +228,17 @@
   }
 }
 
+@media (min-width: 576px) {
+  .trust__stars--mobile,
+  .heroParagraph__mobile,
+  .trust__text--mobile {
+    display: none;
+  }
+}
+
 @media (max-width: 576px) {
   .hero__container {
-    height: 400px;
+    height: 450px;
     margin: auto;
     justify-content: space-evenly;
   }
@@ -256,6 +249,9 @@
     height: auto;
     padding: 20px !important;
     position: relative;
+    background: transparent;
+    backdrop-filter: none;
+    border: none;
   }
 
   .heroHeading {
@@ -265,10 +261,11 @@
   .headingMobile {
     display: block;
     font-size: 1.8rem;
+    color: $bgColor;
   }
 
   .heroBtn {
-    height: 50px;
+    height: 45px;
     width: 100%;
     font-size: 1.2rem !important;
     margin: auto;
@@ -280,6 +277,22 @@
     display: none;
   }
 
+  .scrollDown {
+    height: 250px;
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .trust__stars--mobile {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+  }
+
+  .chevron-down {
+    display: none;
+  }
+
   .feather-star {
     width: 18px;
     height: 18px;
@@ -288,28 +301,6 @@
 
   .card-img-top {
     height: 150px;
-  }
-
-  .hero__text--container {
-    width: 80% !important;
-    height: fit-content;
-  }
-
-  .hero__text {
-    font-size: 1rem;
-    display: flex !important;
-    flex-direction: column !important;
-    align-items: center !important;
-  }
-
-  .feather-award,
-  .feather-truck,
-  .feather-check-circle {
-    height: 20px;
-    width: 20px;
-    stroke-width: 1;
-    margin-bottom: 10px;
-    margin-top: 10px;
   }
 
   .card-text {
