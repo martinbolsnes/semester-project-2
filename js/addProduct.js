@@ -27,7 +27,7 @@ productForm.onsubmit = async function (event) {
     title.value = "";
     price.value = "";
     description.value = "";
-    image_url.value = "";
+    image.value = "";
     isFeatured = "";
   } catch {}
 };
