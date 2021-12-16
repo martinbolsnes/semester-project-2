@@ -60,6 +60,7 @@ async function getProduct(productId) {
 
     addToCartBtn.forEach((element) => {
       element.onclick = function () {
+        element.innerHTML = "Added to cart";
         element.classList.add(
           "disabled",
           "animate__animated",
