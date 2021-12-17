@@ -691,10 +691,6 @@ footer {
   }
 }
 
-.shopHeading {
-  font-weight: 300;
-}
-
 .filter__container {
   display: -webkit-box !important;
   display: -ms-flexbox !important;
@@ -906,6 +902,7 @@ footer {
 
 .login_container {
   margin-bottom: 50px;
+  margin-top: 40px;
 }
 
 .submitBtn {
