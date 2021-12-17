@@ -723,6 +723,7 @@ footer {
 
 .productsSection {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .detailsSection {
@@ -827,6 +828,10 @@ footer {
   margin-bottom: 40px;
 }
 
+.cart__container {
+  margin-bottom: 40px;
+}
+
 .cartCard {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -924,13 +929,9 @@ textarea {
   color: #000000;
 }
 
-.sub-menu {
-  border-bottom: solid 1px #737164;
-}
-
-.table-container,
-.sub-menu {
+.table-container {
   margin-top: 40px;
+  margin-bottom: 40px;
 }
 
 thead {
@@ -943,6 +944,7 @@ tbody {
 
 .edit_container {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 
 .form-check {
