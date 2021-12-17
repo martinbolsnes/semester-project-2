@@ -6,7 +6,7 @@ import { getUser } from "../libs/localStorageHelper.js";
       ".menu"
     ).innerHTML += `<nav class="navbar navbar-expand-lg">
       <div class="logo">
-        <a class="navbar-brand" href="index.html">amenity.</a>
+        <a class="navbar-brand" href="index.html">amenity<span class="navbar-brand-dot">.</span></a>
       </div>
       <button
         class="navbar-toggler"
@@ -130,7 +130,7 @@ import { getUser } from "../libs/localStorageHelper.js";
     ).innerHTML = `<nav class="navbar navbar-expand-lg">
       
       <div class="logo">
-          <a class="navbar-brand" href="index.html">amenity.</a>
+          <a class="navbar-brand" href="index.html">amenity<span class="navbar-brand-dot">.</span></a>
         </div>
         <button
           class="navbar-toggler"
