@@ -23,3 +23,7 @@ Images:
 - https://unsplash.com/photos/6CJg-fOTYs4
 - https://unsplash.com/photos/RqO6kwm4tZY
 - https://unsplash.com/photos/NxAwryAbtIw
+
+Scoll animation: 
+
+- https://webdesign.tutsplus.com/tutorials/animate-on-scroll-with-javascript--cms-36671
