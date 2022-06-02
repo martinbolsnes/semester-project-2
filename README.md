@@ -17,9 +17,9 @@ This was a semester project that I made at the end of 2021. The project had to i
 
 ## Built with
 
-- JavaScript ![image]({https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E})
-- Bootstrap ![image]({https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white})
-- Strapi ![image]({https://img.shields.io/badge/strapi-2e7eea?style=for-the-badge&logo=strapi&logoColor=white})
+- JavaScript ![JavaScript](https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E)
+- Bootstrap ![Bootstrap](https://img.shields.io/badge/bootstrap-%23563D7C.svg?style=for-the-badge&logo=bootstrap&logoColor=white)
+- Strapi ![Strapi](https://img.shields.io/badge/strapi-%232E7EEA.svg?style=for-the-badge&logo=strapi&logoColor=white)
 
 ## Getting started
 
