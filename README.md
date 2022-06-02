@@ -3,6 +3,8 @@
 ```Admin credentials:
 Username/email : admin@admin.com
 Password: Pass1234
+
+Production website: https://semester-project2-8fe85f.netlify.app
 ```
 
 Semester project at Noroff Oslo 2021. E-commerce website with admin pages.
