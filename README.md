@@ -51,5 +51,4 @@ Make sure the open a pull request if you want to contribute
 
 ## Contact
 
-[Email](martinbolsnes@icloud.com)
 [LinkedIn](https://www.linkedin.com/in/martin-bols%C3%B8nes-5973941b5/)
